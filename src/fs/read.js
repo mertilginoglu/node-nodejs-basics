@@ -6,7 +6,7 @@ const read = async () => {
   try {
     const content = fs.readFileSync(filePath).toString();
     console.log(content);
-  } catch (error) {
+  } catch (err) {
     throw Error("FS operation failed");
   }
 };

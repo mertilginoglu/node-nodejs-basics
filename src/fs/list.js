@@ -7,7 +7,7 @@ const list = async () => {
     fs.readdirSync(folderPath).forEach((file) => {
       console.log(file);
     });
-  } catch (error) {
+  } catch (err) {
     throw Error("FS operation failed");
   }
 };
